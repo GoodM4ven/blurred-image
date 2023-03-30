@@ -237,6 +237,10 @@ Again, this is a TALL stack package. You're expected to have installed:
    ```
 
 
+## Todos
+- [ ] Add the conversion thumbnail's width and height to the config file and organize it.
+
+
 ## Credits
 
 - [TailwindCSS](https://tailwindcss.com)
