@@ -18,6 +18,8 @@ This **[TALL stack](https://tallstack.dev)** package implements [Blurhash](https
 
 It can also be integrated with your [Laravel Media Library](https://github.com/spatie/laravel-medialibrary) setup to do the same to its model images.
 
+https://user-images.githubusercontent.com/121377476/228868383-fcc7971b-e0ad-4e46-8093-92290514e029.mp4
+
 
 ## Requirements
 
