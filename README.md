@@ -26,6 +26,7 @@ https://user-images.githubusercontent.com/121377476/228868383-fcc7971b-e0ad-4e46
 Again, this is a TALL stack package. You're expected to have installed:
 
 - TailwindCSS
+  - With defined `primary` theme color
 - Alpine.js
 - Laravel (PHP, Composer, NPM)
 
