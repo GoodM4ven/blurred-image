@@ -6,7 +6,7 @@ document.addEventListener('alpine:init', () => {
         link: config.link,
         element: config.element,
         isBackground: config.isBackground,
-        forceDisplay: config.forceDisplay,
+        isDisplayEnforced: config.isDisplayEnforced,
 
         loaded: false,
         visible: false,
