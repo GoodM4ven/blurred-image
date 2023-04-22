@@ -184,6 +184,8 @@ Again, this is a TALL stack package. You're expected to have installed:
       public function registerMediaConversions(Media $media = null): void
       {
           $this->addBlurredThumbnailConversion();
+
+          // Maybe "clipped" banner conversion here!
       }
    }
    ```
@@ -203,6 +205,8 @@ Again, this is a TALL stack package. You're expected to have installed:
        :isBackground="false"         {{-- Defaults to config('blurred-image.is-background') --}}
        :isEagerLoaded="false"        {{-- Defaults to config('blurred-image.is-eager-loaded') --}}
        :isDisplayEnforced="false"    {{-- Defaults to config('blurred-image.is-display-enforced') --}}
+       {{-- Special Case --}}
+       conversion="clipped"          {{-- Defaults to '' --}}
        {{-- Case 1 - When the model is in the view --}}
        :model="$army"                {{-- REQUIRED --}}
        :mediaIndex="2"               {{-- Defaults to 0 --}}
@@ -232,6 +236,8 @@ Again, this is a TALL stack package. You're expected to have installed:
        :isBackground="false"         {{-- Defaults to config('blurred-image.is-background') --}}
        :isEagerLoaded="false"        {{-- Defaults to config('blurred-image.is-eager-loaded') --}}
        :isDisplayEnforced="false"    {{-- Defaults to config('blurred-image.is-display-enforced') --}}
+       {{-- Special Case --}}
+       conversion="clipped"          {{-- Defaults to '' --}}
        {{-- REQUIRED --}}
        imagePath="{{ asset('images/sky.jpg') }}"
        {{-- OPTIONAL - Will try to resolve it automatically as 'images/sky-thumbnail.jpg' if not given --}}
