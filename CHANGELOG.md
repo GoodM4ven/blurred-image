@@ -2,6 +2,10 @@
 
 All notable changes to `blurred-image` will be documented in this file.
 
+## v1.0.6 - 2023-04-22
+
+Removed the prop in the wrong example! :(
+
 ## v1.0.5 - 2023-04-22
 
 Added the missing "conversion" prop to the docs
