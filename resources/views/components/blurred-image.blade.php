@@ -144,7 +144,7 @@
                 x-transition:enter-end="opacity-100"
                 @class([
                     $imageClasses => $imageClasses,
-                    'object-center' => $isObjectCentered,
+                    '!object-center' => $isObjectCentered,
                     'absolute inset-0 h-full w-full object-cover image-classes',
                 ])
             >
@@ -169,7 +169,13 @@
             x-transition:enter="transition ease-out duration-300"
             x-transition:enter-start="opacity-0"
             x-transition:enter-end="opacity-100"
-            class="h-full w-full object-cover"
+            @class([
+                $widthClass,
+                $heightClass,
+                $imageClasses => $imageClasses,
+                '!object-center' => $isObjectCentered,
+                'object-cover',
+            ])
             src="{{ asset('vendor/blurred-image/images/empty-media-placeholder.png') }}"
             alt="{{ __('Empty image placeholder') }}"
         >
